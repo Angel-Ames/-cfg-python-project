@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Favourite Cats</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    </head>
+    <body>
+        {% for item in data %}
+            <p>{{ item }}</p>
+        {% endfor %}
+    </body>
+</html>
